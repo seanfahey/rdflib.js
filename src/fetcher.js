@@ -862,7 +862,7 @@ var Fetcher = function Fetcher (store, timeout, async) {
         var h2 = h.toLowerCase()
         kb.add(response, ns.httph(h2), value, response)
         if (h2 === 'content-type'){ // Convert to RDF type
-          kb.add(xhr.resource, ns.rdf('type'), $rdf.Util.mediaTypeClass(value), response)
+          //kb.add(xhr.resource, ns.rdf('type'), $rdf.Util.mediaTypeClass(value), response)
         }
       }
     }
